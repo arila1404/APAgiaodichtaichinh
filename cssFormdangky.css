@@ -1,42 +1,242 @@
+:before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62%;
+}
 body{
-    background-image: url(Image/LIEN-HE-VAY-TIEN.jpg);
-    height: 82vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 49px;
-    padding-left: 48px;
-}
-.dangky{
-    background-image: url(Image/images.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    height: 90%;
-    width: 29%;
-    border-radius: 20px;
-    color: brown;
-    font-size: 20px;
-}
-.text{
-    font-weight: bold;
-    padding: 15px;
-}
-.tt{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: #d1e2e9;
+    color:rgb(23, 47, 99);
+    position: relative;
     z-index: 1;
-    height: 22px;
-    color: black;
-    width: 200px;
 }
-.xacnhan
-{
-    padding: 11px;
-    font-size: 16px;
-    background-color: #eb4949;
-    color: white;
-    font-weight: bold;
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+}
+.nav{
+    background-color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    height: 120px;
+}
+.menu-list .home {
+    color: #000;
+    background-color: transparent;
+    font-weight: 500;
+    border-bottom: solid #243a6f 5px;
     border-radius: 10px;
 }
-.rreset {
-    padding-left: 142px;
+.menu-list .home a:hover{
+   background-color: transparent;
+}
+
+
+.menu-list li a:hover{
+   background-color:  #99FFEE;
+   color: #000;
+   font-weight: 500;
+   border-radius: 30px 10px;
+   transition: all 180ms linear;
+   text-decoration: none;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.container2{
+    padding: 0.3rem;
+}
+.banner{
+    background-image: url(Image/bg.jpg);
+    width: 100%;
+    height: 100vh;
+
+}
+
+.dangky {
+    top: 0;
+    bottom: 0;
+    background-image: url(Image/BGFORM2.jpg);
+    width: 400px;
+    height: 450px;
+    right: calc((100vw - min(100vw, 1170px))/2);
+    position: absolute;
+    align-items: center;
+    padding-bottom: 110px;
+    margin-top: 195px;
+    border-radius: 20px;
+    box-shadow: -2px 5px 20px rgb(0 0 0 / 42%);
+}
+
+.khachhang {
+    display: flex;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 18px;
+}
+.khachhangvay {
+    width: 50%;
+}
+.sinhvien {  
+    width: 50%;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    display: block;
+}
+.button1 {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    border: none;
+}
+.button2 {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    border: none;
+}
+.button1:hover{
+    background-color: rgba(238, 95, 29, 0.753);
+    color: white;
+    text-decoration: underline;
+    border-radius: 18px 0px 0px 0px;
+}
+.button2:hover{
+    background-color: rgba(238, 95, 29, 0.753);
+    color: white;
+    text-decoration: underline;
+    border-radius: 0px 18px 0px 0px;
+}
+.text{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.menuvay {
+    background-color: #a2cbcb;
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: -2px 5px 20px rgb(79 127 127);
+    padding-left: 20px;
+}
+.canhle{
+    color: white;
+    padding-left: 20px;
+    font-weight: bold;
+    
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d1e2e9;
+    overflow: hidden;
+}
+
+
+.log{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-menu{
+    display: none;
+}
+
+.menu-list{
+    display: flex;
+    align-items: center;
+}
+
+
+.menu-link:link, .menu-link:visited{
+    padding: 1rem 2rem;
+    transition: all 300ms ease-in-out;
+}
+
+.menu-link .icon{
+    font-size: 4rem;
+}
+
+.menu-bar{
+    display: none;
+}
+.tongtien{ 
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    display: flex;
+
+}
+.tt{
+    width: 50%;
+}
+#intongtien {
+    padding-left: 82px;
+}
+#nutbamtinh{
+    background-color: #a19992;
+    font-size: 18px;
+    width: 222px;
+    height: 34px;
+    border-radius: 10px;
+    margin-top: 7px;
+}
+.nutbam_dangky{
+    text-align: center;
+    margin-top: 30px;
+    height: 50px;
+    padding-top: 24px;
+}
+#Dangky{
+    background-color: #dddd1d;
+    padding: 20px 70px;
+    font-size: 25px;
+    color: #297004;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: -2px 6px 32px #dddd1d;
+
+    transition: color 0.5s, background 0.5s, box-shadow 0.5s;
+}
+#Dangky:hover{
+    background-color: #56a72b;
+    box-shadow: -2px 6px 32px #56a72b;
+    color: #dddd1d;
+   
 }
