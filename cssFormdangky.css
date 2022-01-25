@@ -1,0 +1,42 @@
+body{
+    background-image: url(Image/LIEN-HE-VAY-TIEN.jpg);
+    height: 82vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 49px;
+    padding-left: 48px;
+}
+.dangky{
+    background-image: url(Image/Images.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 90%;
+    width: 29%;
+    border-radius: 20px;
+    color: brown;
+    font-size: 20px;
+}
+.text{
+    font-weight: bold;
+    padding: 15px;
+}
+.tt{
+    z-index: 1;
+    height: 22px;
+    color: black;
+    width: 200px;
+}
+.xacnhan
+{
+    padding: 11px;
+    font-size: 16px;
+    background-color: #eb4949;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.rreset {
+    padding-left: 142px;
+}

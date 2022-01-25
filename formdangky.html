@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hiện đăng ký khoản vay với APA</title>
+    <link rel="stylesheet" href="cssFormdangky.css">
+    <script src="formdangky.js"></script>
+</head>
+<body>
+    <div class="dangky">
+        <div class="text">Thực hiện đăng ký hồ sơ vay tiền</div>
+        <table style="margin-left:20px">
+            <tr>
+                <td>
+                    Họ và tên: 
+                </td>
+                <td>
+                    <input type="text" id="name" class="tt">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Số CMND/Thẻ CCCD: 
+                </td>
+                <td>
+                    <input type="text" id="cmnd_cccd" class="tt">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ngày sinh: 
+                </td>
+                <td>
+                    <input type="date" name="Ngaysinh" max="2022-02-02" class="tt">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Giới tính: 
+                </td>
+                <td>
+                    <input type="radio" name="GioiTinh" value="Nam" class="Gtinh" checked> 
+                    <label for="Nam">Nam</label> 
+                    <input type="radio" name="GioiTinh" class="Gtinh" value="Nu" > 
+                    <label for="Nam">Nữ</label> 
+                    <input type="radio" name="GioiTinh" class="Gtinh" value="Khac" >
+                    <label for="Nam">Khác</label> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Số điện thoại liên lạc: 
+                </td>
+                <td>
+                    <input type="text" id="sdt" class="tt">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Địa chỉ email: 
+                </td>
+                <td>
+                    <input type="text" id="email" class="tt">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Địa chỉ: 
+                </td>
+                <td>
+                    <textarea name="Diachi" id="Diachi" cols="65" rows="5" col="5" style="width: 200px; height: 128px;"></textarea>    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input onclick="xacthuc()" type="button" value="Gửi thông tin đăng ký" class="xacnhan">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

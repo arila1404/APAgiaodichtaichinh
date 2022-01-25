@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- CSS -->
+    <link rel="stylesheet" href="Css.css">  
+    <!--JavaScript-->
+    <script src="javaS.js"></script>
+    <title>APA - Giải vay trong vòng 10p</title>
+</head>
+
+<body>
+    <!-- Header  -->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+    <header id="home" class="header">
+        <nav class="nav">
+            <div class="log container">
+                <!-- Logo -->
+                <div class="logo">
+                        <img class="LOGOO" style="width: 200px; height: 100px; " src="Image/LOGO.png">
+                </div>
+                <!-- Menu -->
+                <div class="menu">
+                    <!-- list menu -->
+                    <ul class="menu-list">
+                        <li class="menu-item home">
+                            <a href="gioithieu.html" class="menu-link">Giới thiệu về APA</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="huongdan.html" class="menu-link">Newbei</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="thanhtoan.html" class="menu-link">Cách thức thanh toán</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="cauhoi.html" class="menu-link">Câu hỏi thường gặp</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="lienhe.html" class="menu-link">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+        <!--Banner-->
+        <div class="banner">
+            <!-- Khung vay tien -->
+            <div class="dangky">
+                <div class="khachhang">
+                    <div class="khachhangvay">
+                        <button class="button1" onclick="outputkh()">Khách hàng</button>
+                    </div>
+                    <div class="sinhvien">
+                        <button class="button2" onclick="outputsv()">Đối với sinh viên</button>
+                    </div>
+                </div>
+                <div class="text" id ="textt">
+                    Số tiền bạn muốn vay
+                </div>
+                <!-- Menu click so tien muon vay -->
+                <div class="menuvay">
+                    <tr>
+                        <td><input type="radio" name="sotienvay" value="5000000"><span class="canhle" id="5tr"></span>
+                        </td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="5500000"><span class="canhle" id="5tr5"></span>
+                        </td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="6000000"><span class="canhle" id="6tr"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="6500000"><span class="canhle" id="6tr5"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="7000000"><span class="canhle" id="7tr"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="7500000"><span class="canhle" id="7tr5"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="8000000"><span class="canhle" id="8tr"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="8500000"><span class="canhle" id="8tr5"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="9000000"><span class="canhle" id="9tr"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="9500000"><span class="canhle" id="9tr5"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="10000000"><span class="canhle" id="10tr"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="11000000"><span class="canhle" id="11tr"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="12000000"><span class="canhle" id="12tr"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="13000000"><span class="canhle" id="13tr"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="14000000"><span class="canhle" id="14tr"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="15000000"><span class="canhle" id="15tr"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="16000000"><span class="canhle" id="16tr"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="17000000"><span class="canhle" id="17tr"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="18000000"><span class="canhle" id="18tr"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="19000000"><span class="canhle" id="19tr"></span></td>
+                        <br>
+                        <br>
+                        <td><input type="radio" name="sotienvay" value="20000000"><span class="canhle" id="20tr"></span></td>
+                    </tr>
+                </div>
+                <!-- In tong tien -->
+                <div class="tongtien">
+                    <button class ="tt" id="nutbamtinh" onclick="clickk()">
+                        Tổng số tiền:    
+                    </button>
+                    <div class ="tt" id="intongtien" > </div>
+                </div>
+                <!-- Nup dang ky -->
+                <div class="nutbam_dangky">
+                    <a href="formdangky.html" id="Dangky">Đăng ký ngay</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <footer>
+        <div class="footer">
+
+        </div>
+    </footer>
+    <!-- Jvs -->
+    <script src="main.js" defer></script>
+</body>
+
+</html>
+
